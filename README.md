@@ -25,3 +25,15 @@ webpack.config.js에서 모듈의 룰에 <br>
 test와 use를 변경<br>
 
 브라우저 style 초기화<br>
+
+## 기본골격 잡기
+
+adobe xd에서 설계한 그대로 scss를 이용해 기본만 style했다.<br>
+
+주로 렐러티브를 이용해 부모요소들을 차례로 쌓았고<br>
+
+position: absolute와 top, left 를 이용해 자식요소들을<br>
+
+그 부모의 원하는 위치에 배치시켜 주었다.<br>
+
+요소의 가운데 정렬은 margin: 0 auto 를 이용했다.<br>
