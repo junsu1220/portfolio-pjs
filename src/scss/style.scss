@@ -1,7 +1,8 @@
 @import "./reset.scss";
 
 html[theme="dark-mode"] {
-  filter: invert(100%) hue-rotate(180deg);
+  background-color: #999;
+  filter: invert(20%);
 }
 
 header {

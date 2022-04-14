@@ -71,3 +71,13 @@ slider 적용까지는 잘했지만 slider를 두 개<br>
 clones까지만 적용하고 좀 더 배운 후에 <br>
 
 다시 시도해봐야겠다.<br>
+
+## dark mode
+
+dark mode는 생각보다 쉬웠다.<br>
+
+js에서 하던대로 El뽑아서 classlist로 넣어주고 <br>
+
+addEvent해주고 css에서 원래와는 다르게<br>
+
+background #999 와 filter invert(20%)넣었다.<br>
