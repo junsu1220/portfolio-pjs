@@ -51,3 +51,9 @@ position: absolute와 top, left 를 이용해 자식요소들을<br>
 이미지는 투명화가 가능한 webp 파일을 <br>
 
 scss background-image url을 이용해 삽입했다. <br>
+
+## footer 작업
+
+우선 footer 먼저 이미지를 잘 살려서<br>
+
+skills와 마찬가지로 마무리했다.<br>

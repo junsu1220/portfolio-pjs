@@ -394,9 +394,11 @@ header {
     position: absolute;
     top: 40px;
     left: 140px;
-    width: 1025px;
-    height: 20px;
-    background-color: royalblue;
+    width: 1160px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
   }
   .project-slider-container {
     position: absolute;
@@ -419,9 +421,11 @@ header {
     position: absolute;
     top: 40px;
     left: 140px;
-    width: 1025px;
-    height: 20px;
-    background-color: royalblue;
+    width: 1160px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
   }
   .clones-slider-container {
     position: absolute;
@@ -441,30 +445,32 @@ footer {
   background-color: #333;
   margin: 0 auto;
   .github-logo {
+    background-image: url("../image/git-hub.png");
+    background-size: cover;
     position: absolute;
+    cursor: pointer;
     top: 120px;
     left: 557px;
     width: 96px;
     height: 95px;
-    background-color: royalblue;
-    border-radius: 60px;
   }
   .tistory-logo {
+    background-image: url("../image/tistory.png");
+    background-size: cover;
     position: absolute;
+    cursor: pointer;
     top: 120px;
     left: 787px;
     width: 96px;
     height: 96px;
-    background-color: royalblue;
-    border-radius: 60px;
   }
   .copyright-mention{ 
     position: absolute;
     top: 270px;
-    left: 620px;
-    width: 200px;
+    left: 580px;
+    width: 300px;
     height: 12px;
-    background-color: royalblue;
+    color: #fff;
     border-radius: 60px;
   }
 }
