@@ -320,11 +320,13 @@ header {
   margin: 0 auto;
   .skills-text {
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 140px;
-    width: 1025px;
-    height: 20px;
-    background-color: royalblue;
+    width: 1160px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
   }
   .skills-container-1 {
     position: absolute;
@@ -332,7 +334,12 @@ header {
     left: 140px;
     width: 1160px;
     height: 300px;
-    background-color: royalblue;
+    background-color: #fff;
+    border-radius: 50px;
+    img {
+      width: 300px;
+      height: 300px;
+    }
   }
   .skills-container-2 {
     position: absolute;
@@ -340,7 +347,8 @@ header {
     left: 140px;
     width: 1160px;
     height: 300px;
-    background-color: royalblue;
+    background-color: #fff;
+    border-radius: 50px;
   }
 }
 
