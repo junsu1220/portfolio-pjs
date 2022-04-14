@@ -9,6 +9,7 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "./dist"),
     clean: true,
+    assetModuleFilename: 'images/[hash][ext][query]'
   },
   devtool: 'source-map',
   mode: "development",
@@ -33,6 +34,10 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.jpeg$/,
+        type:'asset/inline'
+      }
     ],
   },
   optimization: {
