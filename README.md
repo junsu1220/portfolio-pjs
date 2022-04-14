@@ -37,3 +37,11 @@ position: absolute와 top, left 를 이용해 자식요소들을<br>
 그 부모의 원하는 위치에 배치시켜 주었다.<br>
 
 요소의 가운데 정렬은 margin: 0 auto 를 이용했다.<br>
+
+## about 작업
+
+일단은 일일이 nth child를 이용하여 위치를 잡아주었다.<br>
+
+아이콘은 font awesome을 사용했다. <br>
+
+특별히 어려운것은 없었지만 코드 리팩토링이 필요한 부분이다.<br>

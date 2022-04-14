@@ -1,11 +1,15 @@
 @import "./reset.scss";
 
+html[theme="dark-mode"] {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
 header {
   position: relative;
   width: 1440px;
   margin: 0 auto;
   height: 50px;
-  background-color: aqua;
+  background-color: #fff;
 
   .logo {
     position: absolute;
@@ -13,25 +17,70 @@ header {
     left: 140px;
     width: 82px;
     height: 15px;
-    background-color: royalblue;
+    font-size: 13px;
+    color: #FA6980;
+    font-weight: 700;
   }
 
-  .themeToggle {
+  .switch {
     position: absolute;
-    top: 5px;
+    width: 60px;
+    height: 34px;
+    top: 7px;
     left: 240px;
-    width: 88px;
-    height: 40px;
-    background-color: royalblue;
+
+    input {
+      display: none;
+    }
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    transition: 0.4s;
+    border-radius: 34px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: 0.5s;
+      border-radius: 50%;
+    }
+  }
+
+  input:checked + .slider {
+    background-color: #FA6980;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(26px);
   }
 
   .sub-menu {
     position: absolute;
     top: 19px;
     left: 1033px;
-    width: 250px;
+    width: 350px;
     height: 12px;
-    background-color: royalblue;
+    span {
+      cursor: pointer;
+      font-size: 11px;
+      margin-left: 18px;
+      opacity: 50%;
+      &:hover {
+        opacity: 100%;
+      }
+    }
   }
 
   .fa-bars {
@@ -43,15 +92,28 @@ header {
   position: relative;
   width: 1440px;
   height: 600px;
-  background-color: aquamarine;
   margin: 0 auto;
+  &::before {
+    content: "";
+    background-image: url("../image/web-design.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
   .main-ment {
     position: absolute;
     top: 220px;
     left: 140px;
     width: 1160px;
     height: 50px;
-    background-color: royalblue;
+    font-size: 50px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
   }
   .sub-ment {
     position: absolute;
@@ -59,7 +121,11 @@ header {
     left: 140px;
     width: 1160px;
     height: 50px;
-    background-color: royalblue;
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.4;
   }
 }
 
@@ -67,15 +133,16 @@ header {
   position: relative;
   width: 1440px;
   height: 885px;
-  background-color: aqua;
   margin: 0 auto;
   .about-text {
     position: absolute;
     top: 40px;
     left: 140px;
-    width: 1025px;
-    height: 20px;
-    background-color: royalblue;
+    width: 1160px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
   }
   .about-container {
     position: absolute;
@@ -83,7 +150,165 @@ header {
     left: 140px;
     width: 1160px;
     height: 740px;
-    background-color: royalblue;
+    flex-wrap: wrap;
+
+    .about-item:nth-child(1){
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: 0;
+      left: 0;
+      .fa-user {
+        position: absolute;
+        font-size: 150px;
+        top: 30px;
+        left: 110px;
+      }
+      p {
+        position: absolute;
+        font-size: 50px;
+        font-weight: 700;
+        top: 200px;
+        left: 100px;
+        text-align: center;
+        line-height: 1.4;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+    .about-item:nth-child(2){
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: 0;
+      left: 400px;
+      .fa-calendar {
+        position: absolute;
+        font-size: 150px;
+        top: 30px;
+        left: 110px;
+      }
+      p {
+        position: absolute;
+        font-size: 50px;
+        font-weight: 700;
+        top: 200px;
+        left: 75px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.4;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .about-item:nth-child(3){
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: 0;
+      left: 800px;
+      .fa-location-dot {
+        position: absolute;
+        font-size: 150px;
+        top: 30px;
+        left: 110px;
+      }
+      p {
+        position: absolute;
+        font-size: 50px;
+        font-weight: 700;
+        top: 200px;
+        left: 20px;
+        text-align: center;
+        line-height: 1.4;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .about-item:nth-child(4){
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: 380px;
+      left: 0px;
+      .fa-phone {
+        position: absolute;
+        font-size: 150px;
+        top: 30px;
+        left: 110px;
+      }
+      p {
+        position: absolute;
+        font-size: 50px;
+        font-weight: 700;
+        top: 200px;
+        left: 10px;
+        text-align: center;
+        line-height: 1.4;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .about-item:nth-child(5){
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: 380px;
+      left: 400px;
+      .fa-envelope {
+        position: absolute;
+        font-size: 150px;
+        top: 30px;
+        left: 100px;
+      }
+      p {
+        position: absolute;
+        font-size: 50px;
+        font-weight: 700;
+        top: 200px;
+        left: 10px;
+        text-align: center;
+        line-height: 1.4;
+        span {
+          font-size: 35px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .about-item:nth-child(6){
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: 380px;
+      left: 800px;
+      .fa-pencil {
+        position: absolute;
+        font-size: 150px;
+        top: 30px;
+        left: 110px;
+      }
+      p {
+        position: absolute;
+        font-size: 50px;
+        font-weight: 700;
+        top: 200px;
+        left: 10px;
+        text-align: center;
+        line-height: 1.4;
+        span {
+          font-size: 30px;
+          font-weight: 400;
+        }
+      }
+    }
   }
 }
 
