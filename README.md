@@ -57,3 +57,17 @@ scss background-image url을 이용해 삽입했다. <br>
 우선 footer 먼저 이미지를 잘 살려서<br>
 
 skills와 마찬가지로 마무리했다.<br>
+
+## slider 작업
+
+slider 적용까지는 잘했지만 slider를 두 개<br>
+
+적용하는 것은 하지 못했다.<br>
+
+아무래도 내가 js에 대한 지식이 아직 <br>
+
+부족하기 때문인 것 같다. <br>
+
+clones까지만 적용하고 좀 더 배운 후에 <br>
+
+다시 시도해봐야겠다.<br>
