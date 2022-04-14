@@ -336,9 +336,23 @@ header {
     height: 300px;
     background-color: #fff;
     border-radius: 50px;
-    img {
-      width: 300px;
-      height: 300px;
+    .html {
+      position: absolute;
+      background-image: url("../image/html.webp");
+      background-size: cover;
+      top: 30px;
+      left: 30px;
+      width: 613px;
+      height: 232px;
+    }
+    .sass {
+      position: absolute;
+      background-image: url("../image/sass.webp");
+      background-size: cover;
+      top: 30px;
+      left: 650px;
+      width: 466px;
+      height: 232px;
     }
   }
   .skills-container-2 {
@@ -349,6 +363,24 @@ header {
     height: 300px;
     background-color: #fff;
     border-radius: 50px;
+    .react {
+      position: absolute;
+      background-image: url("../image/react.webp");
+      background-size: cover;
+      top: 30px;
+      left: 30px;
+      width: 657px;
+      height: 225px;
+    }
+    .git {
+      position: absolute;
+      background-image: url("../image/git.webp");
+      background-size: cover;
+      top: 90px;
+      left: 750px;
+      width: 329px;
+      height: 137px;
+    }
   }
 }
 

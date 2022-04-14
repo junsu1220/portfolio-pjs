@@ -45,3 +45,9 @@ position: absolute와 top, left 를 이용해 자식요소들을<br>
 아이콘은 font awesome을 사용했다. <br>
 
 특별히 어려운것은 없었지만 코드 리팩토링이 필요한 부분이다.<br>
+
+## SKILLS 작업
+
+이미지는 투명화가 가능한 webp 파일을 <br>
+
+scss background-image url을 이용해 삽입했다. <br>
