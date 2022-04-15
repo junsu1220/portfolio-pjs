@@ -81,3 +81,33 @@ js에서 하던대로 El뽑아서 classlist로 넣어주고 <br>
 addEvent해주고 css에서 원래와는 다르게<br>
 
 background #999 와 filter invert(20%)넣었다.<br>
+
+## gsap
+
+gsap을 이용한 scroll에 드디어 성공했다...<br>
+
+아직 완벽한 성공이라고 할 수는 없는데<br>
+
+모듈화를 제대로 하지 못했기 때문이다. <br>
+
+이론의 부족함을 느끼고 우선 부족한 부분만<br>
+
+이론공부를 한 후에 다시 slider와 scroll을<br>
+
+해결해야겠다.<br>
+
+문제였던 부분은 gsap을 npm으로 설치하여<br>
+
+사용시 import 하는데에 있어서 실행이 안되는<br>
+
+부분이었다.<br>
+
+이유는 내가 ScrollToPlugin을 사용해야하는데 <br>
+
+그럴려면<br>
+
+gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); <br>
+
+을 추가해야했다. 공식문서에 있는 내용이었는데<br>
+
+다시 한번 공식문서의 힘을 느낀다.<br>

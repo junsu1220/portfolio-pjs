@@ -3,6 +3,47 @@ import "@fortawesome/fontawesome-free/js/all.js";
 import Slider from "./ImageSlider";
 import Theme from "./theme";
 
+import gsap from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
+
+const toTopEl = document.querySelector("#to-top");
+const toHomeEl = document.querySelector("#home");
+const toAboutEl = document.querySelector("#about-me");
+const toSkillsEl = document.querySelector("#skills");
+const toProjectsEl = document.querySelector("#projects");
+const toClonesEl = document.querySelector("#clones");
+
+toTopEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
+  });
+});
+toHomeEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
+  });
+});
+toAboutEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 550,
+  });
+});
+toSkillsEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 1430,
+  });
+});
+toProjectsEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 2280,
+  });
+});
+toClonesEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 3200,
+  });
+});
+
 new Theme();
-new Slider(".sli-1");
-new Slider(".sli-2");
+new Slider();

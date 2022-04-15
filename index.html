@@ -10,16 +10,19 @@
 
 <body>
   <header>
-    <div class="logo">PJS Portfolio</div>
+    <div class="logo">
+      <a href="/">PJS Portfolio</a>
+    </div>
     <label class="switch">
       <input id="switch" type="checkbox">
       <span class="slider"></span>
     </label>
     <div class="sub-menu">
-      <span>ABOUT ME</span>
-      <span>SKILLS</span>
-      <span>PROJECTS</span>
-      <span>CLONES</span>
+      <span id="home">HOME</span>
+      <span id="about-me">ABOUT ME</span>
+      <span id="skills">SKILLS</span>
+      <span id="projects">PROJECTS</span>
+      <span id="clones">CLONES</span>
     </div>
     <i class="fa-solid fa-bars"></i>
   </header>
@@ -87,7 +90,7 @@
   <section class="projects">
     <div class="projects-text">PROJECTS</div>
 
-    <div class="slider-wrap sli-1" id="slider-wrap">
+    <div class="slider-wrap" id="slider-wrap">
       <ul class="list slider" id="slider">
           <li><img src="<%= require('./src/image/red.jpeg') %>" /></li>
           <li><img src="<%= require('./src/image/orange.jpeg') %>"></li>
@@ -109,33 +112,23 @@
   <section class="clones">
     <div class="clones-text">CLONES</div>
 
-    <div class="slider-wrap sli-2" id="slider-wrap">
-      <ul class="list slider" id="slider">
-          <li><img src="<%= require('./src/image/red.jpeg') %>" /></li>
-          <li><img src="<%= require('./src/image/orange.jpeg') %>"></li>
-          <li><img src="<%= require('./src/image/yellow.jpeg') %>"></li>
-          <li><img src="<%= require('./src/image/green.jpeg') %>"></li>
-          <li><img src="<%= require('./src/image/blue.jpeg') %>"></li>
-          <li><img src="<%= require('./src/image/indigo.jpeg') %>"></li>
-          <li><img src="<%= require('./src/image/violet.jpeg') %>"></li>
-      </ul>
-      <div class="btn next" id="next"><i class="fa fa-arrow-right"></i></div>
-      <div class="btn previous" id="previous"><i class="fa fa-arrow-left"></i></div>
-      <div class="indicator-wrap" id="indicator-wrap">
-          <ul></ul>
-      </div>
-    </div>
-
   </section>
 
   <footer>
-    <div class="github-logo"></div>
-    <div class="tistory-logo"></div>
+    <div class="github-logo">
+      <a href="https://github.com/junsu1220" target="_blank"></a>
+    </div>
+    <div class="tistory-logo">
+      <a href="https://crablab.tistory.com/" target="_blank"></a>
+    </div>
     <div class="copyright-mention">
       © 2022. Park junsu. All rights reserved
     </div>
   </footer>
-  <div class="to-top"></div>
+  <div id="to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
 </body>
 
 </html>
