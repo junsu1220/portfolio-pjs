@@ -111,3 +111,11 @@ gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); <br>
 을 추가해야했다. 공식문서에 있는 내용이었는데<br>
 
 다시 한번 공식문서의 힘을 느낀다.<br>
+
+## 반응형 웹
+
+지금까지의 내용들을 반응형으로 우선 만들어보았다.<br>
+
+퍼블리싱은 이제 웬만하면 다 구현 가능해진것 같다.<br>
+
+나의 포트폴리오의 슬라이드 기능에서 autoplay는 필요없기에 제거했다.<br>

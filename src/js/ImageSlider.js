@@ -29,7 +29,6 @@ export default class ImageSlider {
     this.addEvent();
     this.createIndicator();
     this.setIndicator();
-    this.initAutoplay();
   }
 
   assignElement() {
