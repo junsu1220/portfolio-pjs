@@ -424,8 +424,126 @@ header {
       left: 0px;
       li {
         float: left;
-        width: 1000px;
-        height: 400px;
+        width: 1160px;
+        height: 704px;
+        .first {
+          width: 1160px;
+          height: 704px;
+          background-color: #BBB;
+          .slider-text {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 1160px;
+            height: 40px;
+            font-size: 40px;
+            text-align: center;
+            font-weight: 700;
+          }
+          .preview {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            width: 430px;
+            height: 430px;
+            background-color: aqua;
+          }
+          .description-box {
+            position: absolute;
+            top: 150px;
+            left: 600px;
+            width: 496px;
+            height: 162px;
+            background-color: aqua;
+            .text-box{
+              font-size: 19px;
+              font-weight: 700;
+              line-height: 2.1;
+            }
+          }
+          .stack-box {
+            position: absolute;
+            top: 350px;
+            left: 600px;
+            width: 496px;
+            height: 230px;
+            background-color: yellow;
+            .skill-box {
+              width: 119px;
+              height: 30px;
+              background-color: #F1F9FF;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 5px solid #BCE0FD;
+              border-radius: 5px;
+            }
+            .frime {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+            }
+            .git {
+              position: absolute;
+              top: 45px;
+              left: 0px;
+            }
+            .url {
+              position: absolute;
+              top: 90px;
+              left: 0px;
+            }
+            .tech {
+              position: absolute;
+              top: 135px;
+              left: 0px;
+            }
+            .deployment {
+              position: absolute;
+              top: 180px;
+              left: 0px;
+            }
+            .about-description {
+              position: absolute;
+              width: 347px;
+              height: 30px;
+              left: 150px;
+              font-weight: 700;
+            }
+            .a {
+              top: 0px;
+            }
+            .b {
+              top: 50px;
+            }
+            .c {
+              top: 100px;
+            }
+            .d {
+              top: 145px;
+            }
+            .e {
+              top: 190px;
+            }
+          }
+        }
+        .second {
+          width: 1160px;
+          height: 704px;
+          background-color: orange;
+        }.third {
+          width: 1160px;
+          height: 704px;
+          background-color: yellow;
+        }.fourth {
+          width: 1160px;
+          height: 704px;
+          background-color: green;
+        }.fifth {
+          width: 1160px;
+          height: 704px;
+          background-color: blue;
+        }
       }
     }
     &:hover .next {
