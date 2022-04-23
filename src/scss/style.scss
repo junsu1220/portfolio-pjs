@@ -76,6 +76,9 @@ header {
     left: 1033px;
     width: 350px;
     height: 12px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     span {
       cursor: pointer;
       font-size: 11px;
@@ -499,14 +502,14 @@ header {
   }
 }
 
-.clones {
+.toy {
   position: relative;
   width: 1440px;
   height: 900px;
   background-color: #FCAE1E;
   margin: 0 auto;
 
-  .clones-text {
+  .toy-text {
     position: absolute;
     top: 40px;
     left: 140px;
@@ -932,29 +935,19 @@ footer {
     }
   }
 
-  .clones {
+  .toy {
     position: relative;
     width: 375px;
     height: 1396px;
     background-color: #FCAE1E;
     margin: 0 auto;
 
-    .clones-text {
+    .toy-text {
       position: absolute;
       top: 40px;
       left: 24px;
       width: 330px;
       height: 50px;
-    }
-
-    .clones-slider-container {
-      position: absolute;
-      top: 132px;
-      left: 24px;
-      width: 330px;
-      height: 1225px;
-      background-color: royalblue;
-      border-radius: 60px;
     }
   }
 
