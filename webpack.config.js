@@ -40,10 +40,6 @@ module.exports = {
       }
     ],
   },
-  scripts: { 
-    dev: "webpack-dev-server",
-    build: "webpack --mode=production" 
-  },
   optimization: {
     minimizer: [
       new TerserPlugin(),
