@@ -119,3 +119,21 @@ gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); <br>
 퍼블리싱은 이제 웬만하면 다 구현 가능해진것 같다.<br>
 
 나의 포트폴리오의 슬라이드 기능에서 autoplay는 필요없기에 제거했다.<br>
+
+## netlify를 이용한 지속적인 배포
+
+netlify시 Deploy log에서 npm WARN old lockfile package-lock.json 이 뜨고 난 이후에<br>
+
+error : timeout으로 배포가 안되는 문제 발생<br>
+
+처음에는 CI = false를 했지만 안됐었고 계속 문제를 찾다보니 스택오버플로우에서 <br>
+
+npm 이전 버전을 사용하면 된다는 글 확인 <br>
+
+vscode에서는 이미 14.16.0을 쓰고있었기에 문제가 없었지만 netlify에서는 v16버전을 쓰고 있었다.<br>
+
+따라서 공식문서에서 node version을 변경하는법을 확인 후 <br>
+
+site setting -> build & deploy -> Environment variables 에서 NODE_VERSION 을 14.16.0으로 주고 <br>
+
+다시 배포하니 문제가 해결되었다.<br>
