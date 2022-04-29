@@ -12,7 +12,7 @@ const toHomeEl = document.querySelector("#home");
 const toAboutEl = document.querySelector("#about-me");
 const toSkillsEl = document.querySelector("#skills");
 const toProjectsEl = document.querySelector("#projects");
-const toToyEl = document.querySelector("#toy");
+const toAlgorithmEl = document.querySelector("#algorithm");
 
 toTopEl.addEventListener("click", function () {
   gsap.to(window, 0.7, {
@@ -39,7 +39,7 @@ toProjectsEl.addEventListener("click", function () {
     scrollTo: 2280,
   });
 });
-toToyEl.addEventListener("click", function () {
+toAlgorithmEl.addEventListener("click", function () {
   gsap.to(window, 0.7, {
     scrollTo: 3200,
   });

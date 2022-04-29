@@ -725,14 +725,14 @@ header {
   }
 }
 
-.toy {
+.algorithm {
   position: relative;
   width: 1440px;
   height: 900px;
   background-color: #FCAE1E;
   margin: 0 auto;
 
-  .toy-text {
+  .algorithm-text {
     position: absolute;
     top: 40px;
     left: 140px;
@@ -741,6 +741,42 @@ header {
     font-size: 40px;
     text-align: center;
     font-weight: 700;
+  }
+
+  .algorithm-container {
+    top: 76px;
+    left: 140px;
+    border-radius: 60px;
+    margin: 50px auto;
+    position: absolute;
+    overflow: hidden;
+    width: 1160px;
+    height: 704px;
+    background-color: #BBB;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    .algorithm-item {
+      width: 300px;
+      height: 300px;
+      background-color: royalblue;
+      margin: 10px;
+      box-sizing: border-box;
+      border-radius: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 50px;
+      transition: .3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }
 
@@ -1417,14 +1453,14 @@ footer {
     }
   }
 
-  .toy {
+  .algorithm {
     position: relative;
     width: 375px;
     height: 1396px;
     background-color: #FCAE1E;
     margin: 0 auto;
 
-    .toy-text {
+    .algorithm-text {
       position: absolute;
       top: 40px;
       left: 24px;
