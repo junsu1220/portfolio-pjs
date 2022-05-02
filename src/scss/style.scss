@@ -5,6 +5,114 @@ html[theme="dark-mode"] {
   filter: invert(20%);
 }
 
+.slider-number {
+  width: 1160px;
+  height: 704px;
+  background-color: #BBB;
+  .slider-text {
+    position: absolute;
+    top: 50px;
+    width: 1160px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .preview {
+    position: absolute;
+    top: 150px;
+    background-size: cover;
+    width: 430px;
+    height: 430px;
+    transition: .5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .description-box {
+    position: absolute;
+    top: 150px;
+    width: 496px;
+    height: 162px;
+    .text-box{
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 2.1;
+    }
+  }
+  .stack-box {
+    position: absolute;
+    top: 350px;
+    width: 496px;
+    height: 230px;
+    .skill-box {
+      width: 119px;
+      height: 30px;
+      background-color: #F1F9FF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid #BCE0FD;
+      border-radius: 5px;
+    }
+    .frime {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .git {
+      position: absolute;
+      top: 45px;
+      left: 0px;
+    }
+    .url {
+      position: absolute;
+      top: 90px;
+      left: 0px;
+    }
+    .tech {
+      position: absolute;
+      top: 135px;
+      left: 0px;
+    }
+    .deployment {
+      position: absolute;
+      top: 180px;
+      left: 0px;
+    }
+    .about-description {
+      position: absolute;
+      width: 347px;
+      height: 30px;
+      left: 150px;
+      font-weight: 700;
+    }
+    .a {
+      top: 0px;
+    }
+    .b {
+      top: 56px;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+    .c {
+      top: 100px;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+    .d {
+      top: 145px;
+    }
+    .e {
+      top: 190px;
+    }
+  }
+}
+
 header {
   position: fixed;
   width: 1440px;
@@ -425,340 +533,82 @@ header {
         float: left;
         width: 1160px;
         height: 704px;
-        .third {
-          width: 1160px;
-          height: 704px;
-          background-color: #BBB;
+        .fifth {
           .slider-text {
-            position: absolute;
-            top: 50px;
             left: 0;
-            width: 1160px;
-            height: 40px;
-            font-size: 40px;
-            text-align: center;
-            font-weight: 700;
           }
           .preview {
-            position: absolute;
-            top: 150px;
             left: 100px;
-            background-image: url("../image/keyboard.png");
-            background-size: cover;
-            width: 430px;
-            height: 430px;
-            transition: .5s;
-            &:hover {
-              transform: scale(1.1);
-            }
+            background-image: url("../image/react-app.png");
           }
           .description-box {
-            position: absolute;
-            top: 150px;
             left: 600px;
-            width: 496px;
-            height: 162px;
-            .text-box{
-              font-size: 19px;
-              font-weight: 700;
-              line-height: 2.1;
-            }
           }
           .stack-box {
-            position: absolute;
-            top: 350px;
             left: 600px;
-            width: 496px;
-            height: 230px;
-            .skill-box {
-              width: 119px;
-              height: 30px;
-              background-color: #F1F9FF;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border: 5px solid #BCE0FD;
-              border-radius: 5px;
-            }
-            .frime {
-              position: absolute;
-              top: 0px;
-              left: 0px;
-            }
-            .git {
-              position: absolute;
-              top: 45px;
-              left: 0px;
-            }
-            .url {
-              position: absolute;
-              top: 90px;
-              left: 0px;
-            }
-            .tech {
-              position: absolute;
-              top: 135px;
-              left: 0px;
-            }
-            .deployment {
-              position: absolute;
-              top: 180px;
-              left: 0px;
-            }
-            .about-description {
-              position: absolute;
-              width: 347px;
-              height: 30px;
-              left: 150px;
-              font-weight: 700;
-            }
-            .a {
-              top: 0px;
-            }
-            .b {
-              top: 56px;
-              a {
-                color: black;
-                text-decoration: none;
-              }
-            }
-            .c {
-              top: 100px;
-              a {
-                color: black;
-                text-decoration: none;
-              }
-            }
-            .d {
-              top: 145px;
-            }
-            .e {
-              top: 190px;
-            }
+          }
+        }
+        .fourth {
+          .slider-text {
+            left: 1160px;
+          }
+          .preview {
+            left: 1260px;
+            background-image: url("../image/keyboard.png");
+          }
+          .description-box {
+            left: 1760px;
+          }
+          .stack-box {
+            left:1760px;
+          }
+        }
+        .third {
+          .slider-text {
+            left: 2320px;
+          }
+          .preview {
+            left: 2420px;
+            background-image: url("../image/port.png");
+          }
+          .description-box {
+            left: 2920px;
+          }
+          .stack-box {
+            left: 2920px;
           }
         }
         .second {
-          width: 1160px;
-          height: 704px;
-          background-color: #BBB;
           .slider-text {
-            position: absolute;
-            top: 50px;
-            left: 1160px;
-            width: 1160px;
-            height: 40px;
-            font-size: 40px;
-            text-align: center;
-            font-weight: 700;
+            left: 3480px;
           }
           .preview {
-            position: absolute;
-            top: 150px;
-            left: 1260px;
-            background-image: url("../image/port.png");
-            background-size: cover;
-            width: 430px;
-            height: 430px;
-            transition: .5s;
-            &:hover {
-              transform: scale(1.1);
-            }
+            left: 3580px;
+            background-image: url("../image/appLab.png");
           }
           .description-box {
-            position: absolute;
-            top: 150px;
-            left: 1760px;
-            width: 496px;
-            height: 162px;
-            .text-box{
-              font-size: 19px;
-              font-weight: 700;
-              line-height: 2.1;
-            }
+            left: 4080px;
           }
           .stack-box {
-            position: absolute;
-            top: 350px;
-            left: 1760px;
-            width: 496px;
-            height: 230px;
-            .skill-box {
-              width: 119px;
-              height: 30px;
-              background-color: #F1F9FF;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border: 5px solid #BCE0FD;
-              border-radius: 5px;
-            }
-            .frime {
-              position: absolute;
-              top: 0px;
-              left: 0px;
-            }
-            .git {
-              position: absolute;
-              top: 45px;
-              left: 0px;
-            }
-            .url {
-              position: absolute;
-              top: 90px;
-              left: 0px;
-            }
-            .tech {
-              position: absolute;
-              top: 135px;
-              left: 0px;
-            }
-            .deployment {
-              position: absolute;
-              top: 180px;
-              left: 0px;
-            }
-            .about-description {
-              position: absolute;
-              width: 347px;
-              height: 30px;
-              left: 150px;
-              font-weight: 700;
-            }
+            left: 4080px;
             .a {
-              top: 0px;
-            }
-            .b {
-              top: 56px;
-              a {
-                color: black;
-                text-decoration: none;
-              }
-            }
-            .c {
-              top: 100px;
-              a {
-                color: black;
-                text-decoration: none;
-              }
-            }
-            .d {
-              top: 145px;
-            }
-            .e {
-              top: 190px;
+              top: 10px;
             }
           }
         }
         .first {
-          width: 1160px;
-          height: 704px;
-          background-color: #BBB;
           .slider-text {
-            position: absolute;
-            top: 50px;
-            left: 2320px;
-            width: 1160px;
-            height: 40px;
-            font-size: 40px;
-            text-align: center;
-            font-weight: 700;
+            left: 4640px;
           }
           .preview {
-            position: absolute;
-            top: 150px;
-            left: 2420px;
-            background-image: url("../image/appLab.png");
-            background-size: cover;
-            width: 430px;
-            height: 430px;
-            transition: .5s;
-            &:hover {
-              transform: scale(1.1);
-            }
+            left: 4740px;
+            background-image: url("../image/starbucks.png");
           }
           .description-box {
-            position: absolute;
-            top: 150px;
-            left: 2920px;
-            width: 496px;
-            height: 162px;
-            .text-box{
-              font-size: 19px;
-              font-weight: 700;
-              line-height: 2.1;
-            }
+            left: 5240px;
           }
           .stack-box {
-            position: absolute;
-            top: 350px;
-            left: 2920px;
-            width: 496px;
-            height: 230px;
-            .skill-box {
-              width: 119px;
-              height: 30px;
-              background-color: #F1F9FF;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border: 5px solid #BCE0FD;
-              border-radius: 5px;
-            }
-            .frime {
-              position: absolute;
-              top: 0px;
-              left: 0px;
-            }
-            .git {
-              position: absolute;
-              top: 45px;
-              left: 0px;
-            }
-            .url {
-              position: absolute;
-              top: 90px;
-              left: 0px;
-            }
-            .tech {
-              position: absolute;
-              top: 135px;
-              left: 0px;
-            }
-            .deployment {
-              position: absolute;
-              top: 180px;
-              left: 0px;
-            }
-            .about-description {
-              position: absolute;
-              width: 347px;
-              height: 30px;
-              left: 150px;
-              font-weight: 700;
-            }
-            .a {
-              top: 10px;
-            }
-            .b {
-              top: 56px;
-              a {
-                color: black;
-                text-decoration: none;
-              }
-            }
-            .c {
-              top: 100px;
-              a {
-                color: black;
-                text-decoration: none;
-              }
-            }
-            .d {
-              top: 145px;
-            }
-            .e {
-              top: 190px;
-            }
+            left: 5240px;
           }
         }
       }
@@ -951,6 +801,131 @@ footer {
 
 
 @media (max-width: 720px) {
+
+  .slider-number {
+    width: 328px;
+    height: 1225px;
+    background-color: #BBB;
+    .slider-text {
+      position: absolute;
+      top: 50px;
+      width: 200px;
+      height: 114px;
+      font-size: 35px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .preview {
+      position: absolute;
+      top: 150px;
+      background-size: cover;
+      width: 267px;
+      height: 267px;
+      transition: .5s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .description-box {
+      position: absolute;
+      top: 450px;
+      width: 260px;
+      height: 380px;
+      .text-box{
+        word-break: break-all;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 2.1;
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .stack-box {
+      position: absolute;
+      top: 850px;
+      width: 267px;
+      height: 330px;
+      .skill-box {
+        width: 70px;
+        height: 30px;
+        background-color: #F1F9FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #BCE0FD;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      .frime {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      .git {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+      }
+      .url {
+        position: absolute;
+        top: 140px;
+        left: 0px;
+      }
+      .tech {
+        position: absolute;
+        top: 210px;
+        left: 0px;
+      }
+      .deployment {
+        position: absolute;
+        top: 280px;
+        left: 0px;
+      }
+      .about-description {
+        position: absolute;
+        width: 347px;
+        height: 30px;
+        left: 100px;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .a {
+        word-break: break-all;
+        width: 150px;
+        top: 5px;
+        font-size: 10px;
+      }
+      .b {
+        top: 75px;
+        word-break: break-all;
+        width: 150px;
+        font-size: 12px;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+      .c {
+        top: 147px;
+        word-break: break-all;
+        width: 150px;
+        font-size: 12px;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+      .d {
+        top: 223px;
+        font-size: 13px;
+      }
+      .e {
+        top: 295px;
+      }
+    }
+  }
+
   header {
     position: fixed;
     width: 375px;
@@ -1291,388 +1266,82 @@ footer {
           float: left;
           width: 328px;
           height: 1225px;
-          .third {
-            width: 328px;
-            height: 1225px;
-            background-color: #BBB;
+          .fifth {
             .slider-text {
-              position: absolute;
-              top: 50px;
               left: 67px;
-              width: 200px;
-              height: 114px;
-              font-size: 35px;
-              text-align: center;
-              font-weight: 700;
             }
             .preview {
-              position: absolute;
-              top: 150px;
               left: 34px;
-              background-image: url("../image/keyboard.png");
-              background-size: cover;
-              width: 267px;
-              height: 267px;
-              transition: .5s;
-              &:hover {
-                transform: scale(1.1);
-              }
+              background-image: url("../image/react-app.png");
             }
             .description-box {
-              position: absolute;
-              top: 450px;
               left: 39px;
-              width: 260px;
-              height: 380px;
-              .text-box{
-                word-break: break-all;
-                font-size: 19px;
-                font-weight: 700;
-                line-height: 2.1;
-                p {
-                  margin-bottom: 20px;
-                }
-              }
             }
             .stack-box {
-              position: absolute;
-              top: 850px;
               left: 34px;
-              width: 267px;
-              height: 330px;
-              .skill-box {
-                width: 70px;
-                height: 30px;
-                background-color: #F1F9FF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 5px solid #BCE0FD;
-                border-radius: 5px;
-                font-size: 12px;
-              }
-              .frime {
-                position: absolute;
-                top: 0px;
-                left: 0px;
-              }
-              .git {
-                position: absolute;
-                top: 70px;
-                left: 0px;
-              }
-              .url {
-                position: absolute;
-                top: 140px;
-                left: 0px;
-              }
-              .tech {
-                position: absolute;
-                top: 210px;
-                left: 0px;
-              }
-              .deployment {
-                position: absolute;
-                top: 280px;
-                left: 0px;
-              }
-              .about-description {
-                position: absolute;
-                width: 347px;
-                height: 30px;
-                left: 100px;
-                font-weight: 700;
-                font-size: 14px;
-              }
-              .a {
-                word-break: break-all;
-                width: 150px;
-                top: 5px;
-                font-size: 10px;
-              }
-              .b {
-                top: 75px;
-                word-break: break-all;
-                width: 150px;
-                font-size: 12px;
-                a {
-                  color: black;
-                  text-decoration: none;
-                }
-              }
-              .c {
-                top: 147px;
-                word-break: break-all;
-                width: 150px;
-                font-size: 12px;
-                a {
-                  color: black;
-                  text-decoration: none;
-                }
-              }
               .d {
-                top: 223px;
-                font-size: 13px;
+                top: 217px;
               }
-              .e {
-                top: 295px;
-              }
+            }
+          }
+          .fourth {
+            .slider-text {
+              left: 395px;
+            }
+            .preview {
+              left: 362px;
+              background-image: url("../image/keyboard.png");
+            }
+            .description-box {
+              left: 367px;
+            }
+            .stack-box {
+              left: 362px;
+            }
+          }
+          .third {
+            .slider-text {
+              left: calc(656px + 67px);
+            }
+            .preview {
+              left: calc(656px + 34px);
+              background-image: url("../image/port.png");
+            }
+            .description-box {
+              left: calc(656px + 39px);
+            }
+            .stack-box {
+              left: calc(656px + 34px);
             }
           }
           .second {
-            width: 328px;
-            height: 1225px;
-            background-color: #BBB;
             .slider-text {
-              position: absolute;
-              top: 50px;
-              left: 395px;
-              width: 200px;
-              height: 114px;
-              font-size: 35px;
-              text-align: center;
-              font-weight: 700;
+              left: calc(984px + 67px);
             }
             .preview {
-              position: absolute;
-              top: 150px;
-              left: 362px;
-              background-image: url("../image/port.png");
-              background-size: cover;
-              width: 267px;
-              height: 267px;
-              transition: .5s;
-              &:hover {
-                transform: scale(1.1);
-              }
+              left: calc(984px + 34px);
+              background-image: url("../image/appLab.png");
             }
             .description-box {
-              position: absolute;
-              top: 450px;
-              left: 367px;
-              width: 260px;
-              height: 380px;
-              .text-box{
-                word-break: break-all;
-                font-size: 19px;
-                font-weight: 700;
-                line-height: 2.1;
-                p {
-                  margin-bottom: 20px;
-                }
-              }
+              left: calc(984px + 39px);
             }
             .stack-box {
-              position: absolute;
-              top: 850px;
-              left: 362px;
-              width: 267px;
-              height: 330px;
-              .skill-box {
-                width: 70px;
-                height: 30px;
-                background-color: #F1F9FF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 5px solid #BCE0FD;
-                border-radius: 5px;
-                font-size: 12px;
-              }
-              .frime {
-                position: absolute;
-                top: 0px;
-                left: 0px;
-              }
-              .git {
-                position: absolute;
-                top: 70px;
-                left: 0px;
-              }
-              .url {
-                position: absolute;
-                top: 140px;
-                left: 0px;
-              }
-              .tech {
-                position: absolute;
-                top: 210px;
-                left: 0px;
-              }
-              .deployment {
-                position: absolute;
-                top: 280px;
-                left: 0px;
-              }
-              .about-description {
-                position: absolute;
-                width: 347px;
-                height: 30px;
-                left: 100px;
-                font-weight: 700;
-                font-size: 14px;
-              }
-              .a {
-                word-break: break-all;
-                width: 150px;
-                top: 5px;
-                font-size: 10px;
-              }
-              .b {
-                top: 75px;
-                word-break: break-all;
-                width: 150px;
-                font-size: 12px;
-                a {
-                  color: black;
-                  text-decoration: none;
-                }
-              }
-              .c {
-                top: 147px;
-                word-break: break-all;
-                width: 150px;
-                font-size: 12px;
-                a {
-                  color: black;
-                  text-decoration: none;
-                }
-              }
-              .d {
-                top: 223px;
-                font-size: 13px;
-              }
-              .e {
-                top: 295px;
-              }
+              left: calc(984px + 34px);
             }
           }
           .first {
-            width: 328px;
-            height: 1225px;
-            background-color: #BBB;
             .slider-text {
-              position: absolute;
-              top: 50px;
-              left: 723px;
-              width: 200px;
-              height: 114px;
-              font-size: 35px;
-              text-align: center;
-              font-weight: 700;
+              left: calc(1312px + 67px);
             }
             .preview {
-              position: absolute;
-              top: 150px;
-              left: 690px;
-              background-image: url("../image/appLab.png");
-              background-size: cover;
-              width: 267px;
-              height: 267px;
-              transition: .5s;
-              &:hover {
-                transform: scale(1.1);
-              }
+              left: calc(1312px + 34px);
+              background-image: url("../image/starbucks.png");
             }
             .description-box {
-              position: absolute;
-              top: 450px;
-              left: 695px;
-              width: 260px;
-              height: 380px;
-              .text-box{
-                word-break: break-all;
-                font-size: 19px;
-                font-weight: 700;
-                line-height: 2.1;
-                p {
-                  margin-bottom: 20px;
-                }
-              }
+              left: calc(1312px + 39px);
             }
             .stack-box {
-              position: absolute;
-              top: 830px;
-              left: 690px;
-              width: 267px;
-              height: 330px;
-              .skill-box {
-                width: 70px;
-                height: 30px;
-                background-color: #F1F9FF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 5px solid #BCE0FD;
-                border-radius: 5px;
-                font-size: 12px;
-              }
-              .frime {
-                position: absolute;
-                top: 0px;
-                left: 0px;
-              }
-              .git {
-                position: absolute;
-                top: 70px;
-                left: 0px;
-              }
-              .url {
-                position: absolute;
-                top: 140px;
-                left: 0px;
-              }
-              .tech {
-                position: absolute;
-                top: 210px;
-                left: 0px;
-              }
-              .deployment {
-                position: absolute;
-                top: 280px;
-                left: 0px;
-              }
-              .about-description {
-                position: absolute;
-                width: 347px;
-                height: 30px;
-                left: 100px;
-                font-weight: 700;
-                font-size: 14px;
-              }
-              .a {
-                word-break: break-all;
-                width: 150px;
-                top: 5px;
-                font-size: 10px;
-              }
-              .b {
-                top: 75px;
-                word-break: break-all;
-                width: 150px;
-                font-size: 12px;
-                a {
-                  color: black;
-                  text-decoration: none;
-                }
-              }
-              .c {
-                top: 147px;
-                word-break: break-all;
-                width: 150px;
-                font-size: 12px;
-                a {
-                  color: black;
-                  text-decoration: none;
-                }
-              }
-              .d {
-                top: 223px;
-                font-size: 13px;
-              }
-              .e {
-                top: 295px;
-              }
+              left: calc(1312px + 34px);
             }
           }
         }
@@ -1689,7 +1358,7 @@ footer {
     }
     .indicator-wrap {
       top: 840px;
-      left: 43%;
+      left: 35%;
     }
   }
 
